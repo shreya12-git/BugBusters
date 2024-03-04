@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./LoginSign.css"; // Make sure to import your CSS file
 import SignUpPage from "./SignUpPage.js";
-// import Otp from "./Otp.js";
+import Otp from "./Otp.js";
 import FinalSignUp from "./FinalSignUp.js";
 import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
 // import SignUpPage from "./SignUpPage.js";
 
 const LoginSign = () => {
@@ -69,39 +70,21 @@ const LoginSign = () => {
             Log In
           </button>
           </Link>
-          <div className="lines">
-            <div className="firstline"></div>
-            <br></br>
-            <div>
+          <div>
+            
+          
+            {/* <div>
               <h4>Or</h4>
-            </div>
-            <br></br>
-            <div className="firstline"></div>
+            </div> */}
+        
+          
           </div>
           <div className="social-media">
             <button className="face-login-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="28"
-                viewBox="0 0 36 38"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_34_37)">
-                  <path
-                    d="M13.5 18.6042C12.465 18.6042 11.625 19.4908 11.625 20.5833C11.625 21.6758 12.465 22.5625 13.5 22.5625C14.535 22.5625 15.375 21.6758 15.375 20.5833C15.375 19.4908 14.535 18.6042 13.5 18.6042ZM22.5 18.6042C21.465 18.6042 20.625 19.4908 20.625 20.5833C20.625 21.6758 21.465 22.5625 22.5 22.5625C23.535 22.5625 24.375 21.6758 24.375 20.5833C24.375 19.4908 23.535 18.6042 22.5 18.6042ZM18 3.16666C9.72 3.16666 3 10.26 3 19C3 27.74 9.72 34.8333 18 34.8333C26.28 34.8333 33 27.74 33 19C33 10.26 26.28 3.16666 18 3.16666ZM18 31.6667C11.385 31.6667 6 25.9825 6 19C6 18.5408 6.03 18.0817 6.075 17.6383C9.615 15.9758 12.42 12.92 13.89 9.13583C16.605 13.1892 21.075 15.8333 26.13 15.8333C27.3 15.8333 28.425 15.6908 29.505 15.4217C29.82 16.5458 30 17.7492 30 19C30 25.9825 24.615 31.6667 18 31.6667Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_34_37">
-                    <rect width="36" height="38" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              LogIn with FaceId
+            <FaHome width={30}/>
+              Back To Home
             </button>
-            <button className="google-login-button">
+            {/* <button className="google-login-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -134,7 +117,7 @@ const LoginSign = () => {
                 </defs>
               </svg>
               LogIn with Google
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -165,10 +148,8 @@ const LoginSign = () => {
               </span>
             </div>
           </div>
-          <div className={`form sign-up ${isSignUp ? "visible" : "hidden"}`}>
-
-              <SignUpPage handleSendOtp={handleSendOtp} />
-         
+          <div className={`form sign-up visible`}>
+          <FinalSignUp></FinalSignUp>
           </div>
         </div>
       </div>

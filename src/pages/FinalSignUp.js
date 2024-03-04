@@ -24,9 +24,22 @@ const FinalSignUp=()=>{
             <span>Password</span>
             <input type="password" name="password" />
           </label>
+          <label>
+            <span>Confirm Password</span>
+            <input type="password" name="password" />
+          </label>
           <br></br>
           <br></br>
-          <Link to='/profile'>
+          <Link to='/'>
+          <button className="submit" type="button" >
+            Send OTP
+          </button>
+          </Link>
+          <label>
+            <span>Enter OTP</span>
+            <input type="password" name="password" />
+          </label>
+          <Link to='/'>
           <button className="submit" type="button" >
             Sign Up
           </button>
