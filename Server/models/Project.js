@@ -23,6 +23,10 @@ const projectSchema = new mongoose.Schema({
 		type:mongoose.Schema.Types.ObjectId,
         ref:"user",
 	}],
+	Sent:[{
+		type:mongoose.Schema.Types.ObjectId,
+        ref:"user",
+	}],
 	category: {
 		type: mongoose.Schema.Types.ObjectId,
 		// required: true,

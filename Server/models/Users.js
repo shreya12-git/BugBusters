@@ -26,6 +26,9 @@ const userSchema = new mongoose.Schema(
 			type: Boolean,
 			default: false,
 		},
+		reg:{
+			type:String,
+		},
 		additionalDetails: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: "Profile",
@@ -39,10 +42,14 @@ const userSchema = new mongoose.Schema(
 		token: {
 			type: String,
 		},
-        request:{
+        request:[{
             type: mongoose.Schema.Types.ObjectId,
 				ref: "Project",
-        }
+        }],
+		sent:[{
+			type: mongoose.Schema.Types.ObjectId,
+				ref: "Project",
+		}]
 	},
 	{ timestamps: true }
 );
