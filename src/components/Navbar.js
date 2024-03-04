@@ -27,7 +27,7 @@ function Nav() {
         </div>
         {/* Navigation Links */}
         <div className="hidden md:flex ml-4 space-x-4">
-<Link to="/">
+  <Link to="/">
 <a
             href="#"
             className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
