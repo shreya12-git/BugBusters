@@ -27,12 +27,14 @@ function Nav() {
         </div>
         {/* Navigation Links */}
         <div className="hidden md:flex ml-4 space-x-4">
-          <a
+<Link to="/">
+<a
             href="#"
             className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             Home
           </a>
+</Link>
           <a
             href="#"
             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
