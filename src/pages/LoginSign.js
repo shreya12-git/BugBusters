@@ -65,7 +65,7 @@ const LoginSign = () => {
             <input type="password" name="password" />
           </label>
           <p className="forgot-pass">Forgot Password ?</p>
-          <Link to='/profile'>
+          <Link to='/afterhomepage'>
           <button className="submit" type="button">
             Log In
           </button>
