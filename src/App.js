@@ -3,6 +3,8 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import Card from "./components/Projects";
+import ProjectDetails from "./pages/ProjectDetails";
+import ProfileForm from "./components/ProfileForm";
 
 function App() {
   return (
@@ -14,7 +16,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route path="/loginsignup" element={<LoginPage></LoginPage>}></Route>
-        <Route path="/projects" element={<Card></Card>}></Route>
+        
+        <Route path="/projectDetails" element={<ProjectDetails></ProjectDetails>}></Route>
+        <Route path="/profile" element={<ProfileForm></ProfileForm>}></Route>
+
 
 
       </Routes>
