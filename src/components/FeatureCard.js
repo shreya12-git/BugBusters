@@ -14,7 +14,8 @@ const Card = ({ title, copy,buttontext }) => {
       <div className="content">
         <h2 className="title">{title}</h2>
         <p className="copy">{copy}</p>
-        <button>{buttontext}</button>
+        <button style={{background:"black", width:"100px", height:"42px" }}  onMouseOver={e => e.currentTarget.style.backgroundColor = "gray"}
+  onMouseLeave={e => e.currentTarget.style.backgroundColor = "black"}>{buttontext}</button>
       </div>
     </div>
   );
