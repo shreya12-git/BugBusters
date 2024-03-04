@@ -38,6 +38,7 @@ html, body {
 }
 
 .card {  
+   
   position: relative;
   border-radius: 8px;
   display: flex;
@@ -102,19 +103,20 @@ html, body {
   }
   
   &:nth-child(1):before {
-    background-image: url(https://i.ibb.co/LQ73GgW/card1.jpg);
+    object-fit:cover;
+    background-image: url(https://i.ibb.co/MntDvQy/Whats-App-Image-2024-03-04-at-19-22-57-0fc76f23.jpg);
   }
   
   &:nth-child(2):before {
-    background-image: url(https://i.ibb.co/wLPHphP/card2.jpg);
+    background-image: url(https://i.ibb.co/0YZz5yN/Whats-App-Image-2024-03-04-at-19-46-36-dc33b09b.jpg);
   }
   
   &:nth-child(3):before {
-    background-image: url(https://i.ibb.co/GJhq73y/card3.jpg);
+    background-image: url(https://i.ibb.co/vDzYsTQ/Whats-App-Image-2024-03-04-at-19-49-38-c033beb8.jpg);
   }
   
   &:nth-child(4):before {
-    background-image: url(https://i.ibb.co/XtFL2jx/card4.jpg);
+    background-image: url(https://i.ibb.co/tb6MzGP/Whats-App-Image-2024-03-04-at-19-50-53-23918016.jpg);
   }
 }
 

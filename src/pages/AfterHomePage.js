@@ -5,9 +5,9 @@ import FeaturesPart from '../components/FeaturesPart';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 
-const HomePage=()=>{
+const AfterHomePage=()=>{
     return(
-
+        
         <div>
         <div><Nav></Nav></div>
         <div><Example></Example></div>
@@ -24,4 +24,4 @@ const HomePage=()=>{
     
     );
 };
-export default HomePage;
+export default AfterHomePage;
