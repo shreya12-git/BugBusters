@@ -21,9 +21,7 @@ const profileSchema = new mongoose.Schema({
     dateOfBirth: {
         type: String,
     },
-    reg:{
-        type:String,
-    },
+    
     Skils:[Skill],
 
     contactNumber: {

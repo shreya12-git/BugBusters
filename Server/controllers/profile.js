@@ -16,7 +16,7 @@ exports.createprofile = async (req,res)=>{
         const profile = await Profile.findById(user.additionalDetails);
 
         profile.gender = gender;
-        profile.reg = reg;
+        user.reg = reg;
         profile.contactNumber = contact;
         user.Name = Name;
         profile.dateOfBirth = DOB;

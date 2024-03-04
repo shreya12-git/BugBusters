@@ -208,3 +208,16 @@ exports.sendotp = async (req, res) => {
 		return res.status(500).json({ success: false, error: error.message });
 	}
 };
+exports.getuser = async(req,res)=>{
+	try {
+		const id = req.params.id;
+	const user = await User.findOne({req:id}).populate("additionalDetails").populate("projects").populate("request").populate("sent").exec();
+	return res.status(200).json({
+		success:true,
+		data:user,
+	})
+	} catch (error) {
+		console.log(error.message);
+		return res.status(500).json({ success: false, error: error.message });
+	}
+}
