@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,23 +29,24 @@ function Nav() {
             href="#"
             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
-            Projects
+            About Us
           </a>
         </div>
         {/* Login/Signup Buttons */}
         <div className="flex">
-          <a
+            <Link to='/loginsignup'>
+            <a
             href="#"
             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
-            Login
-          </a>
-          <a
+            Login/SignUp
+          </a></Link>
+          {/* <a
             href="#"
             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             Signup
-          </a>
+          </a> */}
         </div>
         {/* Mobile Menu Button */}
         <div className="-mr-2 flex md:hidden">
@@ -119,7 +121,7 @@ function Nav() {
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Projects
+                 Projects
                 </a>
 
                
