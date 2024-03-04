@@ -5,6 +5,7 @@ import LoginPage from "./pages/LoginPage";
 import Card from "./components/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import ProfileForm from "./components/ProfileForm";
+import Nav1 from "./components/Navbar2";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         
         <Route path="/projectDetails" element={<ProjectDetails></ProjectDetails>}></Route>
         <Route path="/profile" element={<ProfileForm></ProfileForm>}></Route>
+        
+
 
 
 
