@@ -6,6 +6,8 @@ import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 import Nav1 from '../components/Navbar2';
 import FeatureCard2 from '../components/FeatureCard2';
+import { Card1Presentation } from '../components/skillscard';
+import { Card2 } from '../components/allprojectscard';
 
 const AfterHomePage=()=>{
     return(
@@ -15,9 +17,11 @@ const AfterHomePage=()=>{
         <div><Example></Example></div>
         <br></br>
         <br></br>
-        <div><FeatureCard2></FeatureCard2></div>
+        <div><Card1Presentation></Card1Presentation></div>
         <br></br>
         <br></br>
+        <div style={{fontSize:"40px", fontWeight:"bold",display:"flex", justifyContent:"center" }}> All projects</div>
+        <div><Card2></Card2></div>
         <div><AboutUs></AboutUs></div>
         <br></br>
         <br></br>
