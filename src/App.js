@@ -7,7 +7,7 @@ import Card from "./components/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import ProfileForm from "./components/ProfileForm";
 import Nav1 from "./components/Navbar2";
-
+import AfterHomePage from "./pages/AfterHomePage";
 import SkillsPage from "./pages/SkillsPage";
 
 
@@ -32,7 +32,7 @@ function App() {
 
 
         <Route path="/skillsPage" element={<SkillsPage></SkillsPage>}></Route>
-        {/* <Route path="/afterhomepage" element={<AfterHomePage></AfterHomePage>}></Route> */}
+        <Route path="/afterhomepage" element={<AfterHomePage></AfterHomePage>}></Route>
 
       </Routes>
       </div>

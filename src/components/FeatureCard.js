@@ -23,7 +23,7 @@ const Card = ({ title, copy,buttontext }) => {
 const AppCard = () => (
   <main className="page-content">
     {cards.map((card, index) => (
-      <Card key={index} {...card} />
+      <Card key={index} {...card}/>
     ))}
   </main>
 );
