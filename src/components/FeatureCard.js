@@ -2,10 +2,10 @@ import React from 'react';
 import './FeatureCard.css';
 
 const cards = [
-  { title: 'Preventive Healthcare', copy: 'Ayurveda emphasizes preventive measures to maintain health and prevent diseases. This includes adhering to seasonal routines (Ritucharya), detoxification processes (Panchakarma), and dietary guidelines tailored to individual constitutions (Prakriti)' ,buttontext:'More'},
-  { title: 'Stress Management', copy: 'Ayurveda places significant importance on mental health. Techniques such as meditation, yoga, and specific herbs are recommended to manage stress, anxiety, and promote mental clarity',buttontext:'More' },
-  { title: 'Digestive Health', copy: 'Ayurveda considers digestion a crucial factor in overall health. It provides dietary recommendations and herbal remedies to improve digestion, address issues such as indigestion, bloating, and optimize nutrient absorption',buttontext:'More' },
-  { title: 'Chronic Disease ', copy: 'Ayurveda is often used as a complementary approach in managing chronic diseases such as diabetes, arthritis, and cardiovascular conditions. It focuses on lifestyle modifications, diet, and herbal remedies to support conventional medical treatments',buttontext:'More'}
+  { title: 'Collaborative Team Formation', copy: 'Connect and collaborate with like-minded individuals effortlessly. Build teams for projects, competitions, or simply to share knowledge and expertise' ,buttontext:'More'},
+  { title: 'Post Ideas and Projects', copy: 'Share your innovative ideas and projects with the community. Get feedback, suggestions, and even find collaborators to bring your vision to life',buttontext:'More' },
+  { title: 'Test Your Skills', copy: 'Put your abilities to the test with our skill verification tests. Assess your proficiency in various domains and showcase your strengths to potential collaborators or employers',buttontext:'More' },
+  { title: 'Get Ranked ', copy: 'Compete and compare your skills with others in the community. Earn rankings and badges based on your performance in tests and projects, establishing your reputation within the platform',buttontext:'More'}
 ];
 
 const Card = ({ title, copy,buttontext }) => {
@@ -14,8 +14,7 @@ const Card = ({ title, copy,buttontext }) => {
       <div className="content">
         <h2 className="title">{title}</h2>
         <p className="copy">{copy}</p>
-        <button style={{background:"black", width:"100px", height:"42px" }}  onMouseOver={e => e.currentTarget.style.backgroundColor = "gray"}
-  onMouseLeave={e => e.currentTarget.style.backgroundColor = "black"}>{buttontext}</button>
+
       </div>
     </div>
   );

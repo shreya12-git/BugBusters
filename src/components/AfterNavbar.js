@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo1.jpg";
 
-function Nav() {
+function AfterNav() {
   
   const [isOpen, setIsOpen] = useState(false);
   const  handleClickScroll=()=>{
@@ -27,20 +27,18 @@ function Nav() {
         </div>
         {/* Navigation Links */}
         <div className="hidden md:flex ml-4 space-x-4">
-  <Link to="/">
-<a
+          <a
             href="#"
             className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             Home
           </a>
-</Link>
           <a
             href="#"
             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             onClick={handleClickScroll}
           >
-            About us
+            About Us
           </a>
         </div>
         {/* Login/Signup Buttons */}
@@ -150,4 +148,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default AfterNav;

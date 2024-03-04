@@ -43,7 +43,7 @@ const LoginSign = () => {
     <div className="mainlogin">
       <div className="cont">
         <div className={`form sign-in ${isSignUp ? "hidden" : ""}`}>
-          <h2>||नमस्ते||</h2>
+          <h2 style={{fontWeight:"bold"}}>Welcome Lions!!</h2>
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="442"
