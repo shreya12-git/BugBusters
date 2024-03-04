@@ -80,10 +80,11 @@ const LoginSign = () => {
           
           </div>
           <div className="social-media">
+            <Link to="/">
             <button className="face-login-button">
             <FaHome width={30}/>
               Back To Home
-            </button>
+            </button></Link>
             {/* <button className="google-login-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
