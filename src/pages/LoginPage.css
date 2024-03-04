@@ -1,0 +1,47 @@
+.navoflogin {
+    margin: 0;
+    background-color: #084108; /* Set the background color to white */
+    padding: 5px; /* Increase padding for better spacing */
+    color: white; /* Set text color to black */
+    position: relative;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    height: 16vh;
+}
+
+.navoflogin ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Adjust the gap as needed for responsiveness */
+    flex-wrap: wrap;
+}
+
+.navoflogin li {
+    margin: 0 5px;
+    list-style: none;
+}
+
+.navoflogin a {
+    text-decoration: none;
+    color: white; /* Set link color to black */
+    font-size: 18px; /* Reduce font size for better readability */
+    font-weight: 500; /* Increase font weight for better visibility */
+
+}
+
+.navoflogin a:hover {
+    text-decoration: underline; /* Underline on hover for better feedback */
+    color: #a8f2a8;
+}
+
+.navoflogin h1 {
+    color: #90D390;
+}
+
+.loginhac {
+    display: flex;
+    gap: 108px;
+    margin-left: auto; /* Align to the right on larger screens */
+}

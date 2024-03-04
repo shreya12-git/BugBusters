@@ -1,0 +1,52 @@
+.entercla{
+    font-weight: bold;
+}
+.otpBox{
+    margin-left: 15%;
+    display: flex;
+    gap: 10px;
+    /* display: inline-block; */
+    margin-top: 15px;
+    
+}
+.otpBox input{
+    width: 50px !important;
+    height: 30px;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+}
+.otpBox input:hover{
+    background-color: lightgray;
+}
+.countdown-text{
+    margin-left: 15%;
+    display: flex;
+    gap:40%;
+}
+.resendbutton{
+    background-color: transparent;
+    color: rgb(24, 121, 219);
+    text-decoration: underline;
+}
+.otpSubmit{
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 36px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    background: #095D1B;
+}
