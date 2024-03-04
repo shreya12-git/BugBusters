@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo1.jpg";
 
 function Nav() {
+  
   const [isOpen, setIsOpen] = useState(false);
+  const  handleClickScroll=()=>{
+    const element=document.getElementById('aboutus');
+    if(element){
+      element.scrollIntoView({behavior:'smooth'});
+    }
+  }
   return (
     <div>
   <nav style={{ backgroundColor: '#0F1035' }}>
@@ -12,8 +20,8 @@ function Nav() {
         {/* Logo */}
         <div className="flex-shrink-0">
           <img
-            className="h-8 w-8"
-            src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+            className="h-10 w-30"
+            src={logo}
             alt="Workflow"
           />
         </div>
@@ -28,6 +36,7 @@ function Nav() {
           <a
             href="#"
             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            onClick={handleClickScroll}
           >
             About Us
           </a>
